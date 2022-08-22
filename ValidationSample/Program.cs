@@ -15,14 +15,13 @@ builder.Services.AddFluentValidationAutoValidation(options =>
 
 builder.Services.AddValidatorsFromAssemblyContaining<PersonValidator>();
 
-builder.Services.AddFluentValidationRulesToSwagger(options =>
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen().AddFluentValidationRulesToSwagger(options =>
 {
     options.SetNotNullableIfMinLengthGreaterThenZero = true;
 });
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
