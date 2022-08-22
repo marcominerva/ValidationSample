@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSample", "ValidationSample\ValidationSample.csproj", "{60CD5F4B-8D8E-49A6-8B4F-22F5A003F72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationSample", "ValidationSample\ValidationSample.csproj", "{60CD5F4B-8D8E-49A6-8B4F-22F5A003F72F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSample.Shared", "ValidationSample.Shared\ValidationSample.Shared.csproj", "{8636A0AF-C34E-4CAE-89E8-018C75A42D0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationSample.Shared", "ValidationSample.Shared\ValidationSample.Shared.csproj", "{8636A0AF-C34E-4CAE-89E8-018C75A42D0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSample.BusinessLayer", "ValidationSample.BusinessLayer\ValidationSample.BusinessLayer.csproj", "{5F621B8E-B779-425B-97AB-C0E541DF4921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationSample.BusinessLayer", "ValidationSample.BusinessLayer\ValidationSample.BusinessLayer.csproj", "{5F621B8E-B779-425B-97AB-C0E541DF4921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C82CC71-2559-40F4-B317-D4C025517ACB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
