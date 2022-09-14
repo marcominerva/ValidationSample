@@ -9,7 +9,7 @@ public class PersonValidator : AbstractValidator<Person>
 {
     public PersonValidator(IConfiguration configuration)
     {
-        //CascadeMode = CascadeMode.Stop;
+        //ClassLevelCascadeMode = CascadeMode.Stop;
 
         RuleFor(p => p.FirstName).NotEmpty().WithMessage(Messages.FieldRequried)
             .MaximumLength(30)
@@ -34,6 +34,8 @@ public class PersonValidator : AbstractValidator<Person>
         });
 
         RuleFor(p => p).Must((p, _) => BeAValidPerson(p));
+
+        RuleFor(p => p.Type).IsInEnum();
     }
 
     private static bool BeAValidPerson(Person person)
