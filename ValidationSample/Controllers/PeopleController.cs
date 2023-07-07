@@ -18,7 +18,9 @@ public class PeopleController : ControllerBase
     [HttpPost]
     public IActionResult Save(Person person)
     {
-        //var validationResults = personValidator.Validate(person);
+        var validationResult = personValidator.Validate(person);
+        Console.WriteLine(validationResult.IsValid);
+
         //var isValid = ModelState.IsValid;
 
         return NoContent();
